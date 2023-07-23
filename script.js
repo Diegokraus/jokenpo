@@ -13,25 +13,15 @@ const verificaGanhador = function(jogador1, jogador2){
     if(jogador1 === jogador2){
         result.innerText = 'Ganhador: ' + 'EMPATE'
 
-        console.log('\nempate')
-        console.log('minha jogada ' + jogador1)
-        console.log('robot ' + jogador2)
     } else if((jogador1 === 0 && jogador2 === 2)||(jogador1 ===1 && jogador2===0)||(jogador1===2 && jogador2 ===1)){
         result.innerText = 'Ganhador: ' + 'VOCÊ'
         countJogador1++
         score1.innerText = countJogador1
 
-        console.log('\nVOCE ganhou!!!')
-        console.log('minha jogada ' + jogador1)
-        console.log('robot ' + jogador2)
     }else {
         result.innerText = 'Ganhador: ' + 'ALEXA'
         countJogador2++
         score2.innerText = countJogador2
-
-        console.log('\nALEXA ganha')
-        console.log('minha jogada ' + jogador1)
-        console.log('robot ' + jogador2)
     }
 }
 
